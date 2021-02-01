@@ -27,7 +27,7 @@ public class q1 {
                 }
             }
         }
-        System.out.println("Cities In Decending Order Are:");
+        System.out.println("Cities In Ascending Order Are:");
         for (int i = 0; i < n; i++) {
             System.out.println(str[i]);
         }

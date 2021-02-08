@@ -1,0 +1,24 @@
+h3{
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+h1{
+    margin-left: 20%;
+    margin-top: 30px;
+}
+
+li{
+    margin-top: 20px;
+}
+
+a:visited{
+    color: peru;
+}
+
+img{
+    margin-top: 30%;
+    margin-left: -10px;
+    border: 2px solid black;
+}

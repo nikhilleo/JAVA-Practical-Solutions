@@ -1,0 +1,38 @@
+<HTML>
+<HEAD>
+    <script>
+        var a = new Array();
+        var i = 1;
+        a[0] = "./2321982.jpg";
+        a[1] = "Screenshot from 2020-09-13 14-33-59.png";
+        a[2] = "Screenshot from 2020-09-18 00-05-31.png";
+        a[3] = "Screenshot from 2020-09-13 14-33-59.png";
+        a[4] = "Screenshot from 2020-12-14 17-39-51.png";
+
+        var n = a.length;
+
+        function slide() {
+            if (i==n-1) {
+                console.log(i)
+                i = 0;
+            }
+            else {
+                document.getElementById("t1").src = a[i]
+                console.log(i)
+                    i++;
+                } 
+                setTimeout("slide()", 2000);
+            }
+            window.onload = slide;
+    </script>
+</HEAD>
+
+<BODY>
+    <form name="p">
+        <center>
+            <img src="" id="t1" width="100%" height="95%">
+        </center>
+    </form>
+</BODY>
+
+</HTML>

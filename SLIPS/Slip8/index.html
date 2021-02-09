@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <title> Javascript Validation </title>
+    <script>
+        function validate() {
+
+            sname = document.getElementById("nm").value;
+
+            smobile = document.getElementById("mb").value;
+            saddress = document.getElementById("add").value;
+            scity = document.getElementById("ct").value;
+            sstate = document.getElementById("st").value;
+            spin = document.getElementById("pin").value;
+            if (sname == "" || smobile == "" || saddress == "" || scity == "" || sstate == "" || spin == "") {
+                alert("Fields should not be empty");
+                return false;
+            } else if (!sname.match(/^[A-Za-z]+$/)) {
+                alert("Name should contain only characters")
+                return false;
+            } else if (!smobile.match(/^\d{10}$/)) {
+                alert("Mobile number Not valid")
+                return false;
+            } else if (!spin.match(/^\d{6}$/)) {
+                alert("Pin number Not valid")
+                return false;
+            }
+            alert("Valid");
+            return false;
+        }
+    </script>
+
+<body>
+    <form name="frmStudent">
+        <center><h1>Student Registration Form</h1></center>
+        <table align="center" width=300>
+            <tr>
+                <td>Name of Student</td>
+                <td><input type=text name=txtSname id=nm size=30></td>
+            <tr>
+                <td>Mobile No</td>
+                <td><input type=text name=txtSmobile id=mb size=30></td>
+            <tr>
+                <td>Address Line</td>
+                <td><input type=text name=txtSaddress id=add size=30></td>
+            <tr>
+                <td>City</td>
+                <td><input type=text name=txtScity id=ct size=30></td>
+            <tr>
+                <td>State</td>
+                <td><input type=text name=txtSstate id=st size=30></td>
+            <tr>
+                <td>Pincode</td>
+                <td><input type=text name=txtSpin id=pin size=30></td>
+            <tr>
+                <td><input type=submit value="Submit" onClick="return validate()"></td>
+                <td><input type=reset value="Reset"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
